@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!--cabeçario-->
+    <header>
+        <div class="container">
+          <div id="barra">
+            <h1><span class="destaque">CRUD</span> EP MM</h1>
+          </div>
+          <nav>
+            <!--links-->
+            <ul>
+              <li class="destaque2"><a href="index.html">Home</a></li>
+              <li><a href="cadastro.html">cadastro</a></li>
+              <li><a href="ler.html">Ler</a></li>
+              <li><a href="atualizar.html">Atualizar</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+  
+      <section class="container">
+        <form>
+            <br>
+          <h1 id="tituloler">DELETAR DADOS:</h1><hr>
+          <h6>Para deletar algum campo basta selecionar a opção e clicar no botão de Deletar Dados:</h6>
+          <br>
+          <div class="row">
+            <div class="col">
+              <label for="title">Nome:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <input type="checkbox" id="checknome">
+                      </div>
+                    </div>
+                    <input type="button" placeholder="dxfyty" class="form-control" id="delnome">
+                </div>
+            </div>
+          </div>
+          <br>
+          <div>
+              <div class="row">
+                  <div class="col">
+                    <label for="title">Nome da Mãe:</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <input type="checkbox" id="checknomemae"> 
+                          </div>
+                        </div>
+                        <input type="button" class="form-control" id="delnomemae">
+                      </div>
+                  </div>
+                  <div class="col">
+                    <label for="title">Nome do Pai:</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <input type="checkbox" id="checknomepai"> 
+                          </div>
+                        </div>
+                        <input type="button" class="form-control" id="delnomepai">
+                      </div>
+                  </div>
+              </div>
+              <br>
+              <div class="row">
+                  <div class="col">
+                    <label for="title">Cidade:</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <input type="checkbox" id="checkcidade"> 
+                          </div>
+                        </div>
+                        <input type="button" class="form-control" id="delcidade">
+                      </div>
+                  </div>
+                  <div class="col">
+                    <label for="title">Curso:</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <input type="checkbox" id="checkcurso"> 
+                          </div>
+                        </div>
+                        <input type="button" class="form-control" id="delcurso">
+                      </div>
+                  </div>
+                  <div class="col">
+                    <label for="title">Idade:</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <input type="checkbox" id="checkidade"> 
+                          </div>
+                        </div>
+                        <input type="button" class="form-control" id="delidade">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <br>
+          <!--botão deletar-->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">
+              Deletar Dados
+          </button>
+          <!--modal conta de acesso-->
+          <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal">Conta:</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">CRUD</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <label for="title">Usuário:</label>
+                      <input type="text" id="atualusuario" class="form-control" placeholder="">
+                  <label for="title">Senha:</label>
+                      <input type="password" id="atualsenha" maxlength="8" class="form-control" placeholder="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary" onclick="deletar()">Deletar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!--roda pé-->
+      <footer>
+        <p>José Henry e Kelly Romualdo 2023</p>
+      </footer>
+      <script src="deletar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

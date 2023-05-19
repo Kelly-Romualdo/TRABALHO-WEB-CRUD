@@ -1,0 +1,165 @@
+/*deletar*/
+.inner{
+  display: block;
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  font-size: 23px;
+  text-align: center;
+  
+}
+
+.excluircadastro{
+  padding-top: 5rem;
+  justify-content: center;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  color: #b9b9b9;
+  
+}
+
+#tituloler{
+  Font-family: Calisto MT;
+  text-align: center;
+}
+
+label{
+  font-weight: bold;
+  Font-family: Calisto MT;
+}
+
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#ffffff;
+  }
+  
+  /* Global */
+  .container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+  }
+  
+  ul{
+    margin:0;
+    padding:0;
+  }
+  
+  
+  .dark{
+    padding:15px;
+    background:#445b68;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  
+  /* Header */
+  header{
+    background:#0b0531;
+    color:#ffffff;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:#ffffff 3px solid;
+  }
+  
+  header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+  }
+  
+  header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #barra{
+    float:left;
+  }
+  
+  header #barra h1{
+    margin:0;
+  }
+  
+  header nav{
+    float:right;
+    margin-top:10px;
+  }
+  
+  header .destaque, header .destaque2 a{
+    color:#e8491d;
+    font-weight:bold;
+  }
+  
+  header a:hover{
+    color:#cccccc;
+    font-weight:bold;
+  }
+  
+  /* blocos */
+  #bloco{
+    min-height:400px;
+    background:url('a2.webp') no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color:#ffffff;
+  }
+  
+
+  #bloco h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+  }
+  
+  #bloco p{
+    font-size:20px;
+  }
+  
+  /* trabalho de pw */
+  #titulo{
+    padding:15px;
+    color:#ffffff;
+    background:#0b0531;
+  }
+  
+  /* Boxes */
+  #boxes{
+    margin-top:20px;
+  }
+  
+  #boxes .box{
+    float:left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+  }
+   
+  /* Funções */
+  ul#services li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#fcfcfc;
+  }
+  
+
+  /* roda pé */
+  footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding:20px;
+    margin-top:0%;
+    margin-bottom: 0;
+    color:#ffffff;
+    background-color: #0b0531;
+    text-align: center;
+  }
